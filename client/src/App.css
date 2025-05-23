@@ -1,0 +1,43 @@
+/* --- top bar ---------------------------------------------------------- */
+.menu{
+  height:60px;
+  background:linear-gradient(90deg,#ff9a9e,#fad0c4);
+  display:flex;align-items:center;justify-content:space-between;
+  padding:0 2rem;box-shadow:0 4px 8px rgba(0,0,0,.1)
+}
+.logo{font-size:1.4rem;color:#5a2a27;margin:0}
+.links a{margin-left:1.5rem;text-decoration:none;font-weight:600;color:#5a2a27}
+.links a:hover{color:#d14d72}
+
+/* --- page-level centring container ----------------------------------- */
+.container,
+.dashboard-container{
+  min-height:calc(100vh - 60px);      /* subtract nav height */
+  display:flex;justify-content:center;align-items:center;
+  background:linear-gradient(135deg,#fad0c4 0%,#f9d5e5 100%);
+  padding:20px;box-sizing:border-box;text-align:center
+}
+
+/* --- form card -------------------------------------------------------- */
+.form{
+  background:#fff;padding:32px 40px;border-radius:12px;
+  box-shadow:0 8px 20px rgba(209,77,114,.25);
+  width:100%;max-width:400px
+}
+.form-title{margin:0 0 20px;color:#d14d72}
+
+/* --- inputs & button -------------------------------------------------- */
+.input-field{
+  width:100%;padding:12px;margin:10px 0;border:1px solid #ddd;
+  border-radius:8px;font-size:1rem;box-sizing:border-box
+}
+.btn{
+  width:100%;padding:12px;background:#d14d72;color:#fff;
+  border:none;border-radius:8px;font-weight:bold;font-size:1.05rem;
+  cursor:pointer;transition:background .3s
+}
+.btn:hover{background:#a83657}
+
+/* --- dashboard text --------------------------------------------------- */
+.dashboard-container h1{margin:0;color:#d14d72}
+.dashboard-container p{margin-top:15px;font-size:1.1rem;color:#555}
